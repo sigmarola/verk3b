@@ -1,4 +1,5 @@
 from bottle import default_app, run, route, template, static_file, error, abort
+application = bottle.default_app()
 from sys import argv
 
 
