@@ -19,5 +19,5 @@ def new(id):
 @route('/static/<skra:path>')
 def static_skra(skra):
     return static_file(skra, root='./public/')
-run(host='localhost', port=9000, debug=True)
+#run(host='localhost', port=9000, debug=True)
 bottle.run(host='0.0.0.0', port=argv[1])
