@@ -1,4 +1,5 @@
-from bottle import run, route, template, static_file, error, abort
+from bottle import default_app, run, route, template, static_file, error, abort
+from sys import argv
 
 
 frettir = [["NewsNewsNews", "Today on the new are some news about news but first, the news", "news.jpg", "news@reputable.com"],
@@ -19,3 +20,4 @@ def new(id):
 def static_skra(skra):
     return static_file(skra, root='./public/')
 run(host='localhost', port=9000, debug=True)
+bottle.run(host='0.0.0.0', port=argv[1])
