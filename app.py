@@ -17,7 +17,9 @@ def new(id):
     return template("news.tpl", title=frettir[id-1][0], news=frettir[id-1][1], img = frettir[id-1][2], author=frettir[id-1][3])
 
 
-
+@error(404)
+def villa(error):
+    return template('<h1>Villa, síða ekki til</h1>')
 @route('/static/<skra:path>')
 def static_skra(skra):
     return static_file(skra, root='./public/')
