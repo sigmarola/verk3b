@@ -19,7 +19,7 @@ def new(id):
 
 @error(404)
 def villa(error):
-    return template('<h1>Villa, síða ekki til</h1>')
+    return template('villa.tpl')
 @route('/static/<skra:path>')
 def static_skra(skra):
     return static_file(skra, root='./public/')
