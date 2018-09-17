@@ -4,9 +4,9 @@ from bottle import run, route, template, static_file, error, abort
 from sys import argv
 
 
-frettir = [["NewsNewsNews", "Today on the new are some news about news but first, the news", "news.jpg", "news@reputable.com"],
+frettir = [["NewsNewsNews", "Today on the news, are some news about news but first, the news", "news.jpg", "news@reputable.com"],
            ["BREAKING NEWS", "There seems to be a surge in new news, so stay tuned for even more news", "breaking-news.jpg", "dave15@yahoo.com"],
-           ["Fake news", "The recent surge in new new has been uncoverd as being FAKE NEWS. there are stikingly little news to go around", "fake-news.jpg", "reporterman@newnews.org"],
+           ["Fake news", "The recent surge in new news has been uncoverd as being FAKE NEWS. there are stikingly little news to go around", "fake-news.jpg", "reporterman@newnews.org"],
            ["No more news", "Yup... all out of news", "news-update.jpg", "news@reputable.com"]]
 
 @route('/')
